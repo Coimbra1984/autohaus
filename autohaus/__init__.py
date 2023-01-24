@@ -9,7 +9,7 @@ except ImportError:
     # If setuptools_scm is not installed (e.g. in a release environment),
     # then use the version that is hard-coded in the file.
     try:
-        from _version import __version__  # noqa: F401
+        from autohaus._version import __version__  # noqa: F401
     except ModuleNotFoundError:
         raise RuntimeError(
             f"{__name__} is not correctly installed. Please install it with pip."
