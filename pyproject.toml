@@ -23,6 +23,11 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+dependencies = [
+    "Flask >= 2",
+    "Werkzeug >= 2",
+]
+
 [project.urls]
 "Homepage" = "https://github.com/Coimbra1984/autohaus"
 "Bug Tracker" = "https://github.com/Coimbra1984/autohaus/issues"
