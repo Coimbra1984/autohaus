@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "_version.py"
+
+[project]
+name = "autohaus"
+dynamic = ["version"]
+authors = [
+  { name="Markus Proeller", email="markus.proeller@pieye.org" },
+]
+description = "YAHA - yet another home automation framework"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Coimbra1984/autohaus"
+"Bug Tracker" = "https://github.com/Coimbra1984/autohaus/issues"
