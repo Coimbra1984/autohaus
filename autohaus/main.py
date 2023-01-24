@@ -49,7 +49,6 @@ def version():
     autohaus
     return flask.jsonify({"version": autohaus.__version__}), 200
 
-
 if __name__ == '__main__':
     # app.run(debug=False, port=args.port, host=args.host)
     server = ServerThread(app, port=args.port, host=args.host)
